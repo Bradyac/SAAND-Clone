@@ -171,8 +171,13 @@
     border-bottom: 3px solid #ff6648;
 }
 
+.dropdown:hover > a {
+    color: rgba(17, 17, 17, 0.85);
+}
+
 .dropdown:hover > .dropdown-content {
     border-bottom: 3px solid #ff6648;
+    color: rgba(17, 17, 17, 0.85);
 }
 
 .dropdown-content {
@@ -342,4 +347,32 @@ section {
 
 .quote_text p {
     color: #777;
+}
+
+/* Section 4 */
+.affiliations {
+    display: flex;
+    justify-content: center;
+}
+
+.affiliations-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.affiliations-title {
+    width: fit-content;
+    padding: 5px 10px;
+    border: 2px solid #dcdbdb;
+    color: #555;
+}
+
+b {
+    flex: 1;
+    height: 2px;
+    background-color: #dcdbdb;
 }
