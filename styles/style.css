@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.top-bar {
+    background-color: #ff6648;
+}
+
+.top-bar-links {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    /* height: 30px; */
+    margin: 0 15px;
+}
+
+.top-bar-links li {
+    position: relative;
+    padding: 3px 0;
+}
+
+.top-bar-links li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.top-bar-links li a:hover {
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    gap: 7px;
+}
+
+.social-links a i {
+    font-size: 1em;
+    color: #fff;
+}
+
+.social-links a i:hover {
+    color: #ffffffcc;
+}
+
+/* Main Nav */
+
+.main-nav {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+    margin-bottom: 15px;
+}
+
+.main-nav nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-nav nav * {
+    color: rgba(102, 102, 102, 0.85);
+    text-decoration: none;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav nav .active {
+    color: #000;
+    border-bottom: 3px solid #ff6648;
+}
+
+.main-nav nav > a {
+    padding: 5px 0;
+}
+
+.main-nav nav > a:hover {
+    color: rgba(17, 17, 17, 0.85);
+    border-bottom: 3px solid #ff6648;
+}
+
+.main-nav nav button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff6648;
+}
+
+.main-nav nav button a {
+    color: #fff;
+}
+
+.main-nav nav button:hover {
+    background-color: #d64c00;
+    border: none;
+    color: #fff;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.img1 {
+    background-image: url(../images/Projects-330.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img2 {
+    background-image: url(../images/Projects-331.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img3 {
+    background-image: url(../images/Projects-332.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: hsla(10, 100%, 64%, 0.5);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #ff6648;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown {
+    padding: 5px 0;
+    border-bottom: 3px solid transparent;
+}
+
+.dropdown:hover {
+    border-bottom: 3px solid #ff6648;
+}
+
+.dropdown:hover > .dropdown-content {
+    border-bottom: 3px solid #ff6648;
+}
+
+.dropdown-content {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: max-content;
+    height: min-content;
+    top: 34px;
+    display: none;
+    background-color: #fff;
+    /* Fix this !important */
+    border: 1px solid rgba(102, 102, 102, 0.5) !important;
+    gap: 0 !important;
+}
+
+.dropdown:hover .dropdown-content:hover {
+    display: flex;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.dropdown-content a:not(:last-child) {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
+}
+
+.dropdown-content a:hover {
+    color: black;
+}
