@@ -1,3 +1,15 @@
+/* Utilities */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Home */
+
 * {
     margin: 0;
     padding: 0;
@@ -169,7 +181,7 @@
     z-index: 10;
     width: max-content;
     height: min-content;
-    top: 34px;
+    top: 33px;
     display: none;
     background-color: #fff;
     /* Fix this !important */
@@ -197,4 +209,57 @@
 
 .dropdown-content a:hover {
     color: black;
+}
+
+/* Content 1 */
+
+section {
+    display: block;
+    padding: 3rem 0;
+    /* margin: 1.5rem 0; */
+}
+
+.reliability {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+    margin-top: 0;
+}
+
+.reliability_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    /* padding: 0 40px; */
+}
+
+.reliability .grid {
+    grid-template-columns: 2fr 4fr;
+}
+
+.reliability img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.reliability_text {
+    padding: 15px;
+    width: 100%;
+}
+
+.reliability_text h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.reliability_text p {
+    color: #777;
+}
+
+/* Section 2 */
+.test {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
 }
