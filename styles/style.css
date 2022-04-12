@@ -18,6 +18,9 @@
     line-height: 1.6;
 }
 
+html {
+}
+
 .top-bar {
     background-color: #ff6648;
 }
@@ -118,6 +121,7 @@
     background-color: #d64c00;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .swiper {
@@ -321,7 +325,6 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
-    /* padding: 0 40px; */
 }
 
 .quote .grid {
@@ -353,15 +356,16 @@ section {
 .affiliations {
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid rgba(119, 119, 119, 0.1);
 }
 
 .affiliations-container {
-    width: 50%;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 15px;
+    gap: 30px;
 }
 
 .affiliations-title {
@@ -371,8 +375,125 @@ section {
     color: #555;
 }
 
-b {
-    flex: 1;
-    height: 2px;
-    background-color: #dcdbdb;
+.affiliations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+.affiliations-grid a {
+    border: 1px #dcdbdb solid;
+}
+
+.affiliations-grid a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 30px;
+}
+
+.affiliations-grid a:nth-child(-n + 4) {
+    border-top: none;
+}
+
+.affiliations-grid a:nth-child(4n + 1) {
+    border-left: none;
+}
+
+.affiliations-grid a:nth-child(4n) {
+    border-right: none;
+}
+
+.affiliations-grid a:nth-last-child(-n + 4) {
+    border-bottom: none;
+}
+
+/* Section 5 */
+.news {
+    width: 100%;
+    /* height: 400px; */
+    background-color: #f6f6f6;
+}
+
+.news-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.news .grid {
+    grid-template-columns: 1fr 2fr;
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #565656;
+    border-left: 2px solid rgba(119, 119, 119, 0.2);
+}
+
+.news-title button {
+    color: white;
+    background-color: #ff6648;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+}
+
+.news-title button:hover {
+    background-color: #d64c00;
+    cursor: pointer;
+}
+
+.news-post-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+}
+
+.news-post {
+    background-color: #fff;
+    color: #565656;
+    border: 2px solid rgba(119, 119, 119, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    gap: 5px;
+}
+
+.news-post p {
+    color: #808080;
+}
+
+.news-post button {
+    color: #565656;
+    background-color: #fff;
+    border: 2px solid rgba(119, 119, 119, 0.2);
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+}
+
+.news-post button:hover {
+    color: #fff;
+    background-color: #ff6648;
+    border: 2px solid rgba(119, 119, 119, 0.2);
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+    cursor: pointer;
 }
